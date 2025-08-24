@@ -1,0 +1,7 @@
+:root {
+  --font-sans: 'Outfit', sans-serif;
+}
+html,
+body {
+  font-family: var(--font-sans);
+}
