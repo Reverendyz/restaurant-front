@@ -1,6 +1,4 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header class="site-header">
@@ -16,6 +14,9 @@
   <main class="content">
     <RouterView />
   </main>
+  <footer class="footer">
+    <p>RevzIT's property</p>
+  </footer>
 </template>
 
 <style scoped>
@@ -73,10 +74,15 @@
 }
 
 .content {
-  max-width: 75ch;
+  max-width: 110ch;
   margin: 2rem auto;
   padding: 0 1rem;
   overflow: auto;
   word-wrap: none;
+}
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 }
 </style>
