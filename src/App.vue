@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
   <header class="site-header">
     <nav class="nav">
       <RouterLink class="nav-link" to="/">Home</RouterLink>
+      <span class="sep" aria-hidden="true">|</span>
+      <RouterLink class="nav-link" to="/product">Products</RouterLink>
       <span class="sep" aria-hidden="true">|</span>
       <RouterLink class="nav-link" to="/about">About</RouterLink>
     </nav>
@@ -69,8 +73,10 @@
 }
 
 .content {
-  max-width: 70ch;
+  max-width: 75ch;
   margin: 2rem auto;
   padding: 0 1rem;
+  overflow: auto;
+  word-wrap: none;
 }
 </style>

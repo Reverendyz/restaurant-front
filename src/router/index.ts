@@ -1,5 +1,6 @@
 import AboutPage from '@/pages/AboutPage.vue'
 import HomePage from '@/pages/HomePage.vue'
+import ProductPage from '@/pages/ProductPage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -16,7 +17,11 @@ const router = createRouter({
       name: 'About',
     },
 
-    { path: '/product', component: '' },
+    {
+      path: '/product',
+      component: ProductPage,
+      name: 'Product'
+    },
   ],
 })
 
